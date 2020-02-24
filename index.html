@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyBookList</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="makeItHappens()">
+        <div class="container">
+            <div class="title">
+                <h1>My<span class="book">Book</span>List</h1>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <br>
+                    <input minlength="7" maxlength="20" id="title" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <br>
+                    <input minlength="7" maxlength="20" id="author" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN#</label>
+                    <br>
+                    <input id="isbn" type="number" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-button">Submit</button>
+            </form>
+
+            <!--<table class="table">
+                <tr class="row">
+                    
+                    <th>Title</th>
+                    
+                    <th>Author</th>
+                    
+                    <th>ISBN</th>
+                </tr>
+            </table>-->
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">ISBN</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

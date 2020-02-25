@@ -60,6 +60,9 @@ submitButton.addEventListener('click',(e)=>{
 
     localStorage.setItem('books',JSON.stringify(booksFromLocalStorage));
         
+    authorInput.value="";
+    titleInput.value="";
+    isbnInput.value="";
     
 });
 
